@@ -1,0 +1,19 @@
+<script setup>
+import TheBaseHeader from "@/components/layouts/TheBaseHeader.vue";
+import TheBaseSide from "@/components/layouts/TheBaseSide.vue";
+</script>
+
+<template>
+  <TheBaseHeader class="fixed w-full"/>
+    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+      <TheBaseSide/>
+
+    </div>
+  <div class="p-4 sm:ml-64">
+    <RouterView/>
+  </div>
+</template>
+
+<style scoped>
+
+</style>
