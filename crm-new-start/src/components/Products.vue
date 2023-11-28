@@ -44,8 +44,8 @@ watch(
 </script>
 
 <template>
-  <main>
-    <div class="flex justify-between align-center py-8 ">
+  <main class="min-w-80 min-h-48">
+    <div class="flex justify-between align-center py-8 bg-white dark:bg-gray-800 ">
       <div>
         <CreateProduct @refresh="refetch" />
       </div>
@@ -67,6 +67,7 @@ watch(
       :total-count="productsData.totalCount"
     />
   </main>
+
 </template>
 
 <style scoped></style>

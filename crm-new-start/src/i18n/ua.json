@@ -54,7 +54,13 @@
   "inactive": "Неактивний",
   "change.description" : "Змінити опис",
   "description": "Опис",
-  "add.new.product" : "Додати новий товар"
-
-
+  "add.new.product" : "Додати новий товар",
+  "your.email" : "Ваше пошта",
+  "your.name" : "Ваше имя",
+  "your.password" : "Ваш пароль",
+  "your.copy.password" : "Ваш пароль ще раз",
+  "remember.me": "Запам`ятай мене",
+  "create.your.account" : "Стоворити акаунт",
+  "lost.password" : "Забув пароль",
+  "not.registered" : "Не має акаунту"
 }

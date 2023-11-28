@@ -24,7 +24,7 @@ export const logOut = () => {
 export const getRefreshedAccessToken = async () => {
   const currentAccessToken = getCookie('access_token')
   const currentRefreshToken = getCookie('refresh_token')
-  if (!currentAccessToken) return
+  if (!currentAccessToken && !currentRefreshToken ) return
 
   const decodedToken = jwtDecode<Token>(currentAccessToken)
   const isExpired = checkIsExpiredAccessToken(decodedToken.exp)

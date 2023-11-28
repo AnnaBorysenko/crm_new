@@ -53,6 +53,14 @@
   "inactive": "Inactive",
   "change.description" : "Change description",
   "description": "Description",
-  "add.new.product" : "Add new product"
+  "add.new.product" : "Add new product",
+  "your.email" : "Your email",
+  "your.name" : "Your name",
+  "your.password" : "Your password",
+  "your.copy.password" : "Repeat your password",
+  "remember.me": "Remember me",
+  "create.your.account" : "Create your account",
+  "lost.password" : "Lost Password",
+  "not.registered" : "Not registered"
 }
 

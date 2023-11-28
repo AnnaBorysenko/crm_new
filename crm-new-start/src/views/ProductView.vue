@@ -14,7 +14,7 @@ const productData = computed(() => result.value?.product ?? ({} as Product))
 </script>
 
 <template>
-  <div v-if="productData.id" class="about">
+  <div v-if="productData.id" class="about bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <h1>{{ productData.name }}</h1>
     <p>{{ productData.description }}</p>
   </div>

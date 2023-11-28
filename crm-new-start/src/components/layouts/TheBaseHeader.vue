@@ -12,22 +12,25 @@ import ThemeToggle from '../ButtonsToggle/ThemeToggle.vue'
 <template>
 
   <header class="flex justify-between border-b">
-
     <nav class="w-full border-1 border-b-gray-150 bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
-      <div class=" flex flex-wrap items-center justify-center mx-auto p-4">
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+      <div class=" flex flex-wrap items-center justify-center p-4">
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta ">
           <ul class="flex items-center flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-
-            <li v-for="route in navigationLinks">
+            <li class="pl-8" v-for="route in navigationLinks">
               <router-link :to="route.path">{{ route?.name }}</router-link>
             </li>
             <li>
               <ThemeToggle/>
             </li>
-            <li>
+            <li >
               <LangToggle/>
             </li>
           </ul>
+          <div class="flex justify-center items-center pl-8">
+            <img class="w-10 h-10 p-1 rounded-full ring-2 items-end ring-gray-300 dark:ring-gray-500" src="/docs/images/people/profile-picture-5.jpg" alt="Bordered avatar">
+            <div class="pl-2.5">User name</div>
+          </div>
+
         </div>
       </div>
     </nav>

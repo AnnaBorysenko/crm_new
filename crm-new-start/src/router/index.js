@@ -6,6 +6,11 @@ const homeRoute = {
   name: 'home',
   component: HomeView
 }
+const registerRoute = {
+  path: '/user',
+  name: 'RegisterUserFrom',
+  component: () => import('../components/RegisterUserForm.vue')
+}
 
 const productRoute = {
   path: '/product/:id',
@@ -19,7 +24,7 @@ const authRoute = {
   component: () => import('../views/AuthView.vue')
 }
 
-const routes = [homeRoute, productRoute, authRoute]
+const routes = [homeRoute, productRoute, authRoute, registerRoute]
 
 export const navigationLinks = [homeRoute, authRoute]
 
